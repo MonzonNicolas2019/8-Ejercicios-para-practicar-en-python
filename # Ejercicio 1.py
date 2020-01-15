@@ -20,26 +20,26 @@ if C+B>A:
 	i++
 
 if i==4:#El mas antes del igual , hace que se le sume la igualdad al valor de la variable
-  print("Es un triangulo")
-  if A==B:
-    i+=20
+	print("Es un triangulo")
+	if A==B:
+		i+=20
 
-  if A==C:
-    i+=20
+	if A==C:
+		i+=20
+	
+	if C==B:#Creo que esta condicion esta de mas
+		i+=20
+		
+	if i==64:
+		print("No solo es un triangulo sino que tambien es Equilatero")
 
-  if C==B:#Creo que esta condicion esta de mas
-    i+=20
+	if i==24:
+		print("No solo es un triangulo sino que tambien es isoceles")
 
-  if i==64:
-     print("No solo es un triangulo sino que tambien es Equilatero")
-
-  if i==24:
-     print("No solo es un triangulo sino que tambien es isoceles")
-
-  if i==4:
-     print("No solo es un triangulo sino que tambien es escaleno")  
+	if i==4:
+		print("No solo es un triangulo sino que tambien es escaleno")  
 else:
-  print("No es un triangulo") 
+	print("No es un triangulo") 
 
 
         
