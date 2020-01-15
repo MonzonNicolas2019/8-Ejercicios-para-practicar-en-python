@@ -5,30 +5,29 @@ dia=int(input("Introducir el dia de la fecha:"))
 mes=int(input("Introducir el mes de la fecha:"))
 anio=int(input("Introducir el año de la fecha:"))
 
-contador=0		
+		
 
-if anio%4==0:
-	contador=contador+1
+def esBisiesto(a):
 	
-
-if anio%100==0:
-	contador=contador+1
+	contador=0
 	
-
-if anio%400==0:
-	contador=contador+1
+	if a % 4 == 0:
+		contador++
 	
-
-if contador==0 or contador==2:
-	print("El año no es bisiesto")	
-else:
-	print("El año es bisiesto")	
-
-print(contador)
+	if a % 100 == 0:
+		contador++
+	
+	if a % 400 == 0:
+		contador++
+	
+	if contador==0 or contador==2:
+		return False
+	else:
+		return True
 
 i=1	
 
-if contador==0 or contador==2:#Equivale a que no sea bisiesto
+if not esBisiesto(anio):
 
 	if 0<mes<=12:
 	    
@@ -50,7 +49,7 @@ if contador==0 or contador==2:#Equivale a que no sea bisiesto
 			print("El dia introducio es incorrecto")	
 	else:
 		print("El mes introducido no es correcto")
-else:#Equivale a que sea bisiesto
+else: #Equivale a que sea bisiesto
 	if 0<mes<=12:
 	    
 		if (mes==1 or mes==3 or mes==5 or mes==7 or mes==8 or mes==10 or mes==12) and dia<=31:
@@ -69,12 +68,4 @@ else:#Equivale a que sea bisiesto
 		if i==4:
 			print("El dia introducio es incorrecto")	
 	else:
-		print("El mes introducido no es correcto")	
-		
-
-
-
-
-
-
-
+		print("El mes introducido no es correcto")
