@@ -1,26 +1,20 @@
 # Determinacion-de-mayor-entero-estricto-de-3-numeros
-#El siguiente programa determinara el mayor entero estricto de entre 3 números sin el uso de operadores logico
+#El siguiente programa determinara el mayor entero estricto de entre 3 números sin el uso de operadores logicos
 
 A=int(input("Introduce el numero A:"))
-
-B=int(input("Introduce el  numero B:"))
-
-C=int(input("Introduce el  numero C:"))  
+B=int(input("Introduce el numero B:"))
+C=int(input("Introduce el numero C:"))  
 
 while A<=0:#No salia poner un print debajo de este y de los otros , porque?
-	A=int(input("Introduce el primer numero:"))
+	A=int(input("Introduce el numero A:"))
 
 while B<=0:
-  
-	B=int(input("Introduce el segundo numero:"))
+	B=int(input("Introduce el numero B:"))
 
 while C<=0:
-  
-  C=int(input("Introduce el tercer numero:"))
+	C=int(input("Introduce el numero C:"))
    	
-
 print("Los numero introducidos son correctos")
-
 
 i=1
 
