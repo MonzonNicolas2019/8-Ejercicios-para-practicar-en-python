@@ -9,7 +9,7 @@ B=int(input("Introduce el lado B el triangulo:"))
 C=int(input("Introduce el lado C el triangulo:"))
 
 i=1
-#Para que este mas piola lo que sigue deberia estar con mayor o igual , pero no lo encontre en mi teclado XD
+
 if A+B>C:#El i++ hace que se le sume 1 al valor de la variable anterior
 	i++
 
@@ -19,15 +19,12 @@ if A+C>B:
 if C+B>A:
 	i++
 
-if i==4:#El mas antes del igual , hace que se le sume la igualdad al valor de la variable
+if i==4:
   print("Es un triangulo")
   if A==B:
-    i+=20
+    i+=20 #El mas antes del igual , hace que se le sume la igualdad al valor de la variable
 
   if A==C:
-    i+=20
-
-  if C==B:#Creo que esta condicion esta de mas
     i+=20
 
   if i==64:
@@ -40,17 +37,3 @@ if i==4:#El mas antes del igual , hace que se le sume la igualdad al valor de la
      print("No solo es un triangulo sino que tambien es escaleno")  
 else:
   print("No es un triangulo") 
-
-
-        
-
-    
-
-
-
-
-
-
-
-
-
