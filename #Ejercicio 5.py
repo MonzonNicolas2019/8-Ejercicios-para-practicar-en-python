@@ -1,5 +1,4 @@
 #Nueva idea
-#Nueva idea porque la otra es un quilombo
 
 import math
 
@@ -26,7 +25,7 @@ def fecha_gregoriana(dia,mes,anio):
 fecha_gregoriana(dia,mes,anio)
 
 lista3=(31,59,90,120,151,181,212,243,273,304,334,365)
-lista4=(31,60,91,121,152,182,213,244,274,305,335,336)
+lista4=(31,60,91,121,152,182,213,244,274,305,335,366)
 
 dian=0
 mesn=0
@@ -108,8 +107,4 @@ if fecha_gregoriana_incial(0,0,anion):
 
 print(dian)
 print(mesn)
-print(anion)					
-
-
-
-
+print(anion)
