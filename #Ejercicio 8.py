@@ -2,23 +2,16 @@
 
 Dinero_a_retirar=int(input("Introduce una cantidad de dinero a retirar:"))
 
-c=0
-contador=0
-
-Cant100=0
-Cant50=0
-Cant10=0
-Cant5=0
-Cant1=0
-
 def Billetes(Dinero_a_retirar):
-	for i in list(str(Dinero_a_retirar)):
-		global contador
-		global Cant100
-		global Cant50
-		global Cant10
-		global Cant5
-		global Cant1
+	c=0
+	contador=0
+	Cant100=0
+	Cant50=0
+	Cant10=0
+	Cant5=0
+	Cant1=0
+	for i in list(str(Dinero_a_retirar)): #Aca queda mas prolijo si reescribis parte del programa usando un while Dinero_a_retirar > 0
+		
 		contador=contador+1
 		c=len(list(str(Dinero_a_retirar)))-contador+1
 		if c-2>0:
